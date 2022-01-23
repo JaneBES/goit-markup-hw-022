@@ -137,7 +137,7 @@ line-height: 1.9;
 /* footer */
 
 address {
-    all:initial ;
+    all:inherit ;
 }
  .information {
      background-color: var(--backgroud-color);
@@ -161,15 +161,15 @@ font-size: 14px;
 line-height: 1.7;
 }
 
-.information .link{
-   color: rgba (255, 255, 255, 0.6); 
+.address-list .link {
+ color: var(--main-title-color);
 font-weight: normal;
 font-size: 14px;
 line-height: 1.7;
 }
  .link .address-list:hover,
 .link .address-list:focus {
-    color: #2196F3;
+   color: rgba (255, 255, 255, 0.6); 
 }
 
 
