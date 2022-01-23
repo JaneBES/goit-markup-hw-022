@@ -137,7 +137,7 @@ line-height: 1.9;
 /* footer */
 
 address {
-    all:inherit ;
+    all:initial ;
 }
  .information {
      background-color: var(--backgroud-color);
