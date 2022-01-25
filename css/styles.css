@@ -19,26 +19,29 @@ body {
 font-weight: bold;
 font-size: 26px;
 line-height: 1,2;
-
 letter-spacing: 0.03em;
-
     text-decoration: none ;
 }
+
 .logo-web {
     color: #2196F3;
 }
+
 ul {
     list-style: none;
 }
 
 .site-nav-list .link {
-    color: var(--primary-text-color);
+    color: var(--description-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 text-decoration: none;
-
 }
+
+ .site-nav-list .link:active {
+     color: #2196F3
+ }
 
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
@@ -56,31 +59,48 @@ text-decoration: none;
 .auth-nav .link:hover,
 .address-list:focus {
     color: #2196F3
-};
+}
+
+h1 {
+    
+font-weight: 900;
+font-size: 44px;
+line-height: 1.4;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
 
 
-/* soiution */
+/* solution */
 .solution {
     background-color: var(--backgroud-color);
     color: #fff;
 }
- /* button */
+
+ /* buttons */
 .button-order {
 background-color: var(--background-button-color);
 color: var(--main-title-color);
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
 }
 
 .buttons-works {
-    color: var(--primary-text-color);
+    font-family: inherit;
+    background-color: var(--main-title-color);
+    color: var(--description-text-color);
     cursor: pointer;
     font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
-
 }
+
 .buttons-works .item:hover,
 .buttons-works .item:focus {
-    color: #2196F3;
+    background-color: var(--background-button-color);
+    color: var(--main-title-color);
 }
 
  
@@ -136,15 +156,16 @@ line-height: 1.9;
 
 /* footer */
 
-address {
-    all:initial ;
+
+   
+
+ .information {     
+background-color: var(--backgroud-color);
 }
- .information {
-     background-color: var(--backgroud-color);
- }
+
 .logo-footer {
-    color: #2196F3;
-   font-family: Raleway, sans-serif; 
+color: #2196F3;
+font-family: Raleway, sans-serif; 
 font-weight: bold;
 font-size: 26px;
 line-height: 1,2;
@@ -154,22 +175,26 @@ letter-spacing: 0.03em;
 .logo-studio {
     color: var(--main-title-color);
 }
-.contacts .address {
-  color: var(--main-title-color);
+.contacts .address{
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6); 
   font-weight: normal;
 font-size: 14px;
 line-height: 1.7;
 }
 
-.address-list .link {
- color: var(--main-title-color);
-font-weight: normal;
+.contacts .link{
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6); 
+  font-weight: normal;
 font-size: 14px;
 line-height: 1.7;
+text-decoration: none;
 }
- .link .address-list:hover,
-.link .address-list:focus {
-   color: rgba (255, 255, 255, 0.6); 
+
+  .address-list .link:hover,
+.address-list .link:focus {
+   color: var(--main-title-color); 
 }
 
 
