@@ -31,25 +31,24 @@ ul {
     list-style: none;
 }
 
+
 .site-nav-list .link {
     color: var(--description-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 text-decoration: none;
-}
-
- .site-nav-list .link:active {
-     color: #2196F3
- }
+cursor: pointer;
+} 
 
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
     color: #2196F3;
 }
 
+
 .auth-nav .link {
- color: var(--primary-text-color);
+ color: var(--description-text-color);
     font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -69,7 +68,9 @@ line-height: 1.4;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 }
-
+.our-work {
+    display: none;
+}
 
 /* solution */
 .solution {
