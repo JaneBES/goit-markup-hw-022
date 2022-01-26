@@ -32,8 +32,9 @@ ul {
 }
 
 
+
 .site-nav-list .link {
-    color: var(--description-text-color);
+    color: var(--primary-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -46,6 +47,9 @@ cursor: pointer;
     color: #2196F3;
 }
 
+.link.current {
+color: var(--background-button-color);
+}
 
 .auth-nav .link {
  color: var(--description-text-color);
@@ -68,7 +72,7 @@ line-height: 1.4;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 }
-.our-work {
+.our-works .name {
     display: none;
 }
 
@@ -78,8 +82,9 @@ text-transform: uppercase;
     color: #fff;
 }
 
- /* buttons */
+ 
 .button-order {
+    font-family: inherit;
 background-color: var(--background-button-color);
 color: var(--main-title-color);
 font-weight: bold;
@@ -88,18 +93,20 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 }
 
-.buttons-works {
+.our-works.buttons-works {
     font-family: inherit;
-    background-color: var(--main-title-color);
-    color: var(--description-text-color);
-    cursor: pointer;
+    
+    color: var(--primary-text-color);
+    
     font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
+letter-spacing: 0.03em;
+cursor: pointer;
 }
 
-.buttons-works .item:hover,
-.buttons-works .item:focus {
+.our-works .buttons-works .item:hover,
+.our-works .buttons-works .item:focus {
     background-color: var(--background-button-color);
     color: var(--main-title-color);
 }
@@ -109,7 +116,8 @@ line-height: 1.6;
     color: var(--primary-text-color);
 font-weight: bold;
 font-size: 36px;
-line-height: 1.2;}
+line-height: 1.2;
+}
 
 /* advantages */
 
@@ -118,6 +126,7 @@ line-height: 1.2;}
 font-weight: bold;
 font-size: 14px;
 line-height: 1.2;
+text-transform: uppercase;
 }
 
 
@@ -146,10 +155,11 @@ line-height: 1.2;
 .works .title {
    font-weight: bold;
 font-size: 18px;
-line-height: 2px;
+line-height: 2;
 }
 
 .works .description {
+    color: var(--description-text-color);
     font-weight: normal;
 font-size: 16px;
 line-height: 1.9;
@@ -178,7 +188,7 @@ letter-spacing: 0.03em;
 }
 .contacts .address{
   font-style: normal;
-  color: rgba(255, 255, 255, 0.6); 
+  color: var(--main-title-color); 
   font-weight: normal;
 font-size: 14px;
 line-height: 1.7;
